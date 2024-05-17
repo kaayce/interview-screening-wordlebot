@@ -14,7 +14,7 @@ const Header = () => {
                     color="primary"
                     component={IconButton}
                     variant="body2"
-                    href="https://github.com/kaayce/interview-screening-wordlebot/blob/main/README.md"
+                    href="https://github.com/kaayce/interview-screening-wordlebot/blob/main/description.md"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
