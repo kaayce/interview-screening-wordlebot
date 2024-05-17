@@ -1,5 +1,6 @@
 import SmartToy from "@mui/icons-material/SmartToy";
-import { Box, Typography } from "@mui/material";
+import { Box, IconButton, Link, Typography } from "@mui/material";
+import InfoIcon from "@mui/icons-material/Info";
 
 const Header = () => {
     return (
@@ -9,6 +10,16 @@ const Header = () => {
                 <Typography variant="h1" color="primary">
                     Wordle Bot
                 </Typography>
+                <Link
+                    color="primary"
+                    component={IconButton}
+                    variant="body2"
+                    href="https://github.com/kaayce/interview-screening-wordlebot/blob/main/README.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <InfoIcon />
+                </Link>
             </Box>
         </Box>
     );
