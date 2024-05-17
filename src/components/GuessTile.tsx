@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SignalCellular4BarIcon from "@mui/icons-material/SignalCellular4Bar";
-import { Box, IconButton, Menu, MenuItem, Stack, TextFieldProps } from "@mui/material";
+import { Box, IconButton, Menu, MenuItem, Stack } from "@mui/material";
 
 import { ClueValues, Clue } from "../api/types";
 
@@ -9,7 +9,7 @@ type GuessTileProps = {
     interactive?: boolean;
     clue?: ClueValues;
     updateState?: (newClue: ClueValues) => void;
-} & TextFieldProps;
+};
 
 const GuessTile = ({ interactive, value, clue, updateState }: GuessTileProps) => {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);

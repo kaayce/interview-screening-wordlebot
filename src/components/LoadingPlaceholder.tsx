@@ -4,8 +4,8 @@ import { Container, Skeleton } from "@mui/material";
 const LoadingPlaceholder = () => {
     return (
         <Container maxWidth="sm">
-            {[...Array(3)].map((e, i) => (
-                <Skeleton key={i} height={70} />
+            {[...Array(3)].map((_, index) => (
+                <Skeleton key={index} height={70} />
             ))}
         </Container>
     );
